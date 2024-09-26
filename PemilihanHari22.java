@@ -11,18 +11,18 @@ public class PemilihanHari22 {
 
         switch (dayName.toLowerCase()) {
             case "monday":
-                case "tuesday":
-                case "wednesday":
-                case "thursday":
-                case "friday":
+            case "tuesday":
+            case "wednesday":
+            case "thursday":
+            case "friday":
                 dayType = "Weekday";
                 break;
-                case "saturday":
-                case "sunday":
+            case "saturday":
+            case "sunday":
                 dayType = "Weekend";
                 break;
             default:
-            dayType = "Invalid day name";
+                dayType = "Invalid day name";
                 break;
         }
 
