@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class PemilihamBilangan22{
+class PemilihamBilangan22 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,6 +11,6 @@ class PemilihamBilangan22{
         bilangan = sc.nextInt();
 
         hasil = (bilangan % 2 == 0) ? "Bilangan Genap" : "Bilangan Ganjil";
-        System.out.println("Angka: " + bilangan + " adalah "+hasil);
+        System.out.println("Angka: " + bilangan + " adalah " + hasil);
     }
 }
