@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Kafe22{
+public class Kafe22 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -23,10 +23,10 @@ public class Kafe22{
             case "Kopi":
                 hargamenu = 12000;
                 break;
-                case "teh":
+            case "teh":
                 hargamenu = 7000;
                 break;
-                case "coklat":
+            case "coklat":
                 hargamenu = 20000;
                 break;
         }
@@ -36,20 +36,20 @@ public class Kafe22{
             case 'S':
                 break;
             case 'M':
-            totalHarga += 0.25 * totalHarga;
-            break;
+                totalHarga += 0.25 * totalHarga;
+                break;
             case 'L':
-            totalHarga += 0.4 * totalHarga;
-            break;
+                totalHarga += 0.4 * totalHarga;
+                break;
             default:
-            System.out.println("size yang dipilih tidak tersedia");
-            return;
+                System.out.println("size yang dipilih tidak tersedia");
+                return;
         }
 
         double diskon = keanggotaan ? 0.1 : 0;
-        double nominalBayar = totalHarga - (diskon*totalHarga);
+        double nominalBayar = totalHarga - (diskon * totalHarga);
 
         System.out.println("Item Pembelian: " + jumlah + " " + menu + " dengan ukuran cup " + ukuranCup);
-        System.out.println("Nominal Bayar: " +nominalBayar);
+        System.out.println("Nominal Bayar: " + nominalBayar);
     }
 }
